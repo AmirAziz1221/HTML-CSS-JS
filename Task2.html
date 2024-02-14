@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form and Table</title>
+        <style>
+            /* form style */
+            form{
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            input[type="text"],
+            input[type="email"],
+            select,
+            textarea{
+                width: 100%;
+                padding: 12px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type="checkbox"],
+            input[type="radio"]{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            textarea{
+                height: 150px;}
+            input[type="submit"]{
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            /* table style */
+            table{
+                border-collapse: collapse;
+                width: 100%;
+            }
+            th, td{
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+            }
+            th:nth-child(even){
+                background-color: #4CAF50;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="#" method="post"
+            <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br>
+
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Subscribe to Newsletter</label><br>
+
+        <label>Preferred Contact Method:</label><br>
+        <input type="radio" id="emailContact" name="contact" value="email">
+        <label for="emailContact">Email</label><br>
+        <input type="radio" id="phoneContact" name="contact" value="phone">
+        <label for="phoneContact">Phone</label><br>
+        <input type="radio" id="mailContact" name="contact" value="mail">
+        <label for="mailContact">Mail</label><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message"></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+
+    <!-- Table -->
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>john@example.com</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>jane@example.com</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Mike Johnson</td>
+            <td>mike@example.com</td>
+            <td>35</td>
+        </tr>
+    </table>
+    </body>
+</html>
