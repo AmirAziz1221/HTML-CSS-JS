@@ -1,0 +1,15 @@
+
+p{
+    color:aqua
+}
+li{
+    list-style-type: square;
+}
+.special{
+    color: red;
+    font-weight: bold;
+}
+li em{
+    color: green;
+
+}
