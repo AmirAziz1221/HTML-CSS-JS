@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Canvas Demo</title>
+</head>
+<body>
+	<h2>Canvas Example</h2>
+	<canvas id="myCanvas" width="500" height="300" style="border: 1px solid #c3c3c3;">
+		your browser is not supports for this
+	</canvas>
+	<script >
+		var c=document.getElementById('myCanvas');
+		var ctx=c.getContext('2d');
+		ctx.font = "20px Arial";
+		ctx.fillText("Hello HTML Developer", 10,20);
+	</script>
+
+</body>
+</html>
