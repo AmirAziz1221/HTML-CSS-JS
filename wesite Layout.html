@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Welcome</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0;
+		}
+
+		/*Header Class style code */
+		.header{
+			background-color: #f1f1f1;
+			padding: 20px;
+			text-align: center;
+		}
+
+		/* topnav navigation class style code */
+		.topnav{
+			overflow: hidden;
+			background-color: #333;
+		}
+		/*topnav a link class style code */
+		.topnav a{
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		/* hover effect*/
+		.topnav a:hover{
+			background-color: #ddd;
+			color: blue;
+		}
+		/* Create three equal column that floats next  each other*/
+		.column{
+			float: left;
+			width: 33.33%;
+			padding: 15px;
+		}
+		/* clear floats after the columns*/
+		.row:after{
+			content: " ";
+			display: table;
+			clear: both;
+		}
+		/* media screen */
+		@media screen and (max-width: 600px){
+			.column{
+				width: 100%;
+			}
+		}
+		/* Footer section*/
+		.footer{
+			background-color: #f1f1f1;
+			padding: 15px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>Header</h1>
+		<p>Change the browser windows to see the responsive website</p>
+	</div>
+	<div class="topnav">
+		<a href="#">Home</a>
+		<a href="#">Service</a>
+		<a href="#">Products</a>
+		<a href="#">Gallery</a>
+		<a href="#">Contact</a>
+	</div>
+	<div class="row">
+		<div class="column">
+			<h2>Column 1</h2>
+			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+		</div>
+		<div class="column">
+			<h2>Column 2</h2>
+			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+		</div>
+		<div class="column">
+			<h2>Column 3</h2>
+			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+		</div>
+	</div>
+	<div class="footer">
+		<p>All right reserved &copy;</p>
+	</div>
+</body>
+</html>
