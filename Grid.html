@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Welcome</title>
+	<style type="text/css">
+		.box1{
+			grid-area: hearder;
+		}
+		.box2{
+			grid-area: menu;
+		}
+		.box3{
+			grid-area: content;
+		}
+		.box4{
+			grid-area: Right;
+		}
+		.box5{
+			grid-area: Footer;
+		}
+		.grid-container{
+			display: grid;
+			grid-template-areas: 
+			'header header header header header header'
+			'menu content content content right right'
+			'menu footer footer footer footer footer';
+			gap: 10px;
+			background-color: #f1f1f1;
+			padding: 10px;
+		}
+		.grid-container>div{
+			background-color: rgb(255, 255, 255, 0.8);
+			text-align: center;
+			padding: 20px 0;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<h2>CSS Grid</h2>
+	<div class="grid-container">
+		<div class="box1">Header</div>
+		<div class="box2">Menu</div>
+		<div class="box3">Content / Dashboard</div>
+		<div class="box4">Right</div>
+		<div class="box5">Footer</div>
+	</div>
+
+</body>
+</html>
