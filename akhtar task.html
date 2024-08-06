@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome Message</title>
+	<style>
+		.container {
+			width: 300px;
+			margin: 50px auto;
+			text-align: center;
+		}
+		
+		#name {
+			padding: 10px;
+			margin-bottom: 20px;
+		}
+		
+		button {
+			padding: 10px;
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		button:hover {
+			background-color: #3e8e41;
+		}
+		
+		#welcome-message {
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<input type="text" id="name" placeholder="Enter your name">
+		<button onclick="submitName()">Submit</button>
+		<h1 id="welcome-message"></h1>
+	</div>
+	
+	<script>
+		let names = [];
+		
+		function submitName() {
+			let name = document.getElementById('name').value;
+			if (name !== '') {
+				names.push(name);
+				document.getElementById('welcome-message').innerHTML = '';
+				names.forEach(function(name) {
+					let p = document.createElement('p');
+					p.textContent = `Welcome, ${name}!`;
+					document.getElementById('welcome-message').appendChild(p);
+				});
+				document.getElementById('name').value = '';
+			}
+		}
+	</script>
+</body>
+</html>
