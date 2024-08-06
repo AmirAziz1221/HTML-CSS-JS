@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Welcome</title>
+	<style type="text/css">
+		a {
+			background-color: black;
+			border: none;
+			color: white;
+			padding: 5px 5px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+		.flex-container {
+			display: flex;
+			background-color: black;
+		}
+		.paragraph {
+			display: flex;
+			column-gap: 30px;
+		}
+		.column {
+			flex: 1;
+			margin-bottom: 15px;
+			transition: transform 0.3s, background-color 0.3s;
+		}
+		.column2 {
+			flex: 2;
+		}
+		. a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+		footer {
+			text-align: center;
+			padding: 20px;
+			background-color: #f1f1f1;
+			color: black;
+			position: fixed;
+			width: 100%;
+			bottom: 0;
+		}
+	</style>
+</head>
+<body>
+	<center><h1>Header</h1>
+	<p>Change the browser window to see the responsive effect</p></center>
+	<div class="flex-container">
+		<a href="#">Home</a>
+		<a href="#">Service</a>
+		<a href="#">Product</a>
+		<a href="#">Gallery</a>
+		<a href="#">Contact</a>
+	</div><br>
+	<div class="paragraph">
+		<div class="column">
+			<h2>Column 1</h2>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		</div>
+		<div class="column column2">
+			<h2>Column 2</h2>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		</div>
+		<div class="column">
+			<h2>Column 3</h2>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		</div>
+	</div><br>
+	<footer>All rights reserved &copy; 2024</footer>
+</body>
+</html>
