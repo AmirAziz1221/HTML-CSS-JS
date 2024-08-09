@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Welcome</title>
+	<style>
+		/* Optional: Center the image and buttons */
+		.container {
+			text-align: center;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>What Can JavaScript Do?</h2>
+		<p>JavaScript can change HTML attribute values.</p>
+		<p>In this case, JavaScript changes the value of the src (source) attribute of an image.</p>
+		<button onclick="changeImage('pic_bulbon.gif')">Turn On</button>
+		<button onclick="changeImage('pic_bulboff.gif')">Turn Off</button>
+		<img id="myImage" src="download.jpeg" alt="Image" width="100">
+	</div>
+
+	<script>
+		function changeImage(src) {
+			document.getElementById('myImage').src = src;
+		}
+	</script>
+</body>
+</html>
+
