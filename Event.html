@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Propagation and Bubbling Example</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: beige;
+            margin: 0;
+            padding: 20px;
+        }
+        .outer{
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .middle{
+            padding: 20px;
+            background-color: #e9e9e9;
+            text-align: center;
+        }
+        .inner{
+            padding: 20px;
+            background-color: #d4d4d4;
+            text-align: center;
+        }
+        button{
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Event Propagation & Bubbling </h2>
+    <div class="outer" onclick="handleEvent('Outer Div')">
+        Outer Div
+        <button onclick="handleEvent('Button in Outer Div')">Click Me</button>
+        <div class="middle" onclick="handleEvent('Middle Div')">
+            Middle Div 
+            <button onclick="handleEvent('Button in Middle Div')">Click Me</button>
+            <div class="inner" onclick="handleEvent('Inner Div')">
+                Inner Div
+                <button onclick="handleEvent('Button in Inner Div')">Click Me</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function handleEvent(element){
+            console.log('Event Triggered in ${element}');
+        }
+    </script>
+</body>
+</html>
