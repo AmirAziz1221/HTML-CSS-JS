@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation Example</title>
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 5px;
+            cursor: pointer;
+        }
+        li:hover {
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Event Delegation Example</h2>
+    <ul id="mylist">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+    </ul>
+    <script>
+        document.getElementById('mylist').addEventListener('click', function(event){
+            if(event.target && event.target.tagName === 'LI'){
+                console.log('Clicked on:',event.target.innerText);
+                event.target.style.color = 'red';
+            }
+        });
+    </script>
+</body>
+</html>
